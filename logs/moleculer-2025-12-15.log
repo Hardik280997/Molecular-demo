@@ -1,0 +1,56 @@
+[2025-12-15T05:06:17.509Z] INFO  laptop-gmahekfg/BROKER: Moleculer v0.14.35 is starting...
+[2025-12-15T05:06:17.511Z] INFO  laptop-gmahekfg/BROKER: Namespace: <not defined>
+[2025-12-15T05:06:17.511Z] INFO  laptop-gmahekfg/BROKER: Node ID: laptop-gmahekfg
+[2025-12-15T05:06:17.512Z] INFO  laptop-gmahekfg/REGISTRY: Strategy: RoundRobinStrategy
+[2025-12-15T05:06:17.513Z] INFO  laptop-gmahekfg/REGISTRY: Discoverer: LocalDiscoverer
+[2025-12-15T05:06:17.527Z] INFO  laptop-gmahekfg/BROKER: Serializer: JSONSerializer
+[2025-12-15T05:06:17.547Z] INFO  laptop-gmahekfg/BROKER: Validator: FastestValidator
+[2025-12-15T05:06:17.550Z] INFO  laptop-gmahekfg/BROKER: Registered 14 middleware(s).
+[2025-12-15T05:06:17.551Z] INFO  laptop-gmahekfg/BROKER: Transporter: RedisTransporter
+[2025-12-15T05:06:18.318Z] INFO  laptop-gmahekfg/API: API Gateway server created.
+[2025-12-15T05:06:18.319Z] INFO  laptop-gmahekfg/API: Register route to '/users'
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API:      GET /users/lists => v2.users.getAllUsers
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API:      GET /users/list => v2.users.list
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API: 
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API: Register route to '/clicks'
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API:      GET /clicks/lists => clicks.getAllClicks
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API:      GET /clicks/list => clicks.list
+[2025-12-15T05:06:18.354Z] INFO  laptop-gmahekfg/API:      GET /clicks/count => clicks.count
+[2025-12-15T05:06:18.355Z] INFO  laptop-gmahekfg/API:     POST /clicks/create/:id => clicks.createUser
+[2025-12-15T05:06:18.355Z] INFO  laptop-gmahekfg/API:     POST /clicks/update/:id => clicks.updateUser
+[2025-12-15T05:06:18.355Z] INFO  laptop-gmahekfg/API: 
+[2025-12-15T05:06:18.375Z] INFO  laptop-gmahekfg/TRANSIT: Connecting to the transporter...
+[2025-12-15T05:06:18.454Z] INFO  laptop-gmahekfg/TRANSPORTER: Setting Redis transporter
+[2025-12-15T05:06:18.472Z] INFO  laptop-gmahekfg/TRANSPORTER: Redis-sub client is connected.
+[2025-12-15T05:06:18.472Z] INFO  laptop-gmahekfg/TRANSPORTER: Setting Redis transporter
+[2025-12-15T05:06:18.479Z] INFO  laptop-gmahekfg/TRANSPORTER: Redis-pub client is connected.
+[2025-12-15T05:06:19.134Z] INFO  laptop-gmahekfg/REGISTRY: '$node' service is registered.
+[2025-12-15T05:06:19.137Z] INFO  laptop-gmahekfg/REGISTRY: 'greeter' service is registered.
+[2025-12-15T05:06:19.138Z] INFO  laptop-gmahekfg/$NODE: Service '$node' started.
+[2025-12-15T05:06:19.138Z] INFO  laptop-gmahekfg/GREETER: Service 'greeter' started.
+[2025-12-15T05:06:19.147Z] INFO  laptop-gmahekfg/API: API Gateway listening on http://localhost:5000
+[2025-12-15T05:06:19.149Z] INFO  laptop-gmahekfg/REGISTRY: 'api' service is registered.
+[2025-12-15T05:06:19.150Z] INFO  laptop-gmahekfg/API: Service 'api' started.
+[2025-12-15T05:06:19.393Z] INFO  laptop-gmahekfg/CLICKS: Sequelize adapter has connected successfully.
+[2025-12-15T05:06:19.403Z] INFO  laptop-gmahekfg/REGISTRY: 'clicks' service is registered.
+[2025-12-15T05:06:19.403Z] INFO  laptop-gmahekfg/CLICKS: Service 'clicks' started.
+[2025-12-15T05:06:19.404Z] INFO  laptop-gmahekfg/V2.USERS: Sequelize adapter has connected successfully.
+[2025-12-15T05:06:19.415Z] INFO  laptop-gmahekfg/REGISTRY: 'users' service is registered.
+[2025-12-15T05:06:19.415Z] INFO  laptop-gmahekfg/V2.USERS: Service 'v2.users' started.
+[2025-12-15T05:06:19.422Z] INFO  laptop-gmahekfg/BROKER: ✔ ServiceBroker with 5 service(s) started successfully in 1s.
+[2025-12-15T05:06:29.912Z] INFO  laptop-gmahekfg/API: <= 404 GET / [+19.122 ms]
+[2025-12-15T05:06:32.834Z] INFO  laptop-gmahekfg/API: => GET /clicks/list
+[2025-12-15T05:06:32.838Z] INFO  laptop-gmahekfg/API:    Call 'clicks.list' action
+[2025-12-15T05:06:32.987Z] INFO  laptop-gmahekfg/API: <= 200 GET /clicks/list [+153.394 ms]
+[2025-12-15T05:07:42.008Z] INFO  laptop-gmahekfg/BROKER: The 'moleculer.config.js' file is changed. (Event: change)
+[2025-12-15T05:07:42.008Z] INFO  laptop-gmahekfg/BROKER: Action: Restart broker...
+[2025-12-15T05:07:42.155Z] INFO  laptop-gmahekfg/$NODE: Service '$node' stopped.
+[2025-12-15T05:07:42.155Z] INFO  laptop-gmahekfg/GREETER: Service 'greeter' stopped.
+[2025-12-15T05:07:42.155Z] INFO  laptop-gmahekfg/CLICKS: Service 'clicks' stopped.
+[2025-12-15T05:07:42.155Z] INFO  laptop-gmahekfg/V2.USERS: Service 'v2.users' stopped.
+[2025-12-15T05:07:44.503Z] INFO  laptop-gmahekfg/$NODE: Service '$node' stopped.
+[2025-12-15T05:07:44.503Z] INFO  laptop-gmahekfg/API: Service 'api' stopped.
+[2025-12-15T05:07:44.503Z] INFO  laptop-gmahekfg/GREETER: Service 'greeter' stopped.
+[2025-12-15T05:07:44.503Z] INFO  laptop-gmahekfg/CLICKS: Service 'clicks' stopped.
+[2025-12-15T05:07:44.503Z] INFO  laptop-gmahekfg/V2.USERS: Service 'v2.users' stopped.
+[2025-12-15T05:07:44.504Z] INFO  laptop-gmahekfg/BROKER: ServiceBroker is stopped. Good bye.

@@ -1,0 +1,103 @@
+[2025-12-12T03:44:59.271Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Moleculer v0.14.35 is starting...
+[2025-12-12T03:44:59.272Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Namespace: <not defined>
+[2025-12-12T03:44:59.272Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Node ID: clicks-laptop-gmahekfg1765511099262
+[2025-12-12T03:44:59.274Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: Strategy: RoundRobinStrategy
+[2025-12-12T03:44:59.274Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: Discoverer: LocalDiscoverer
+[2025-12-12T03:44:59.371Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Cacher: RedisCacher
+[2025-12-12T03:44:59.371Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Serializer: JSONSerializer
+[2025-12-12T03:44:59.387Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Validator: FastestValidator
+[2025-12-12T03:44:59.389Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Registered 15 middleware(s).
+[2025-12-12T03:44:59.391Z] INFO  clicks-laptop-gmahekfg1765511099262/TRANSPORTER: NATS lib version: 2.29.3
+[2025-12-12T03:44:59.391Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: Transporter: NatsTransporter
+[2025-12-12T03:44:59.955Z] INFO  clicks-laptop-gmahekfg1765511099262/TRANSIT: Connecting to the transporter...
+[2025-12-12T03:45:00.090Z] INFO  clicks-laptop-gmahekfg1765511099262/TRANSPORTER: NATS client v2 is connected.
+[2025-12-12T03:45:00.101Z] INFO  clicks-laptop-gmahekfg1765511099262/CACHER: Redis cacher connected.
+[2025-12-12T03:45:00.145Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: Node 'users-laptop-gmahekfg1765510951074' connected.
+[2025-12-12T03:45:00.719Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: '$node' service is registered.
+[2025-12-12T03:45:00.722Z] INFO  clicks-laptop-gmahekfg1765511099262/$NODE: Service '$node' started.
+[2025-12-12T03:45:00.969Z] INFO  clicks-laptop-gmahekfg1765511099262/CLICKS: Sequelize adapter has connected successfully.
+[2025-12-12T03:45:00.980Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: 'clicks' service is registered.
+[2025-12-12T03:45:00.980Z] INFO  clicks-laptop-gmahekfg1765511099262/CLICKS: Service 'clicks' started.
+[2025-12-12T03:45:00.983Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: ✔ ServiceBroker with 2 service(s) started successfully in 1s.
+[2025-12-12T03:45:02.559Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: Node 'users-laptop-gmahekfg1765510951074' disconnected.
+[2025-12-12T03:45:02.388Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Moleculer v0.14.35 is starting...
+[2025-12-12T03:45:02.389Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Namespace: <not defined>
+[2025-12-12T03:45:02.390Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Node ID: gateway-laptop-gmahekfg1765511102380
+[2025-12-12T03:45:02.391Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Strategy: RoundRobinStrategy
+[2025-12-12T03:45:02.391Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Discoverer: LocalDiscoverer
+[2025-12-12T03:45:02.493Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Cacher: RedisCacher
+[2025-12-12T03:45:02.493Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Serializer: JSONSerializer
+[2025-12-12T03:45:02.511Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Validator: FastestValidator
+[2025-12-12T03:45:02.514Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Registered 15 middleware(s).
+[2025-12-12T03:45:02.516Z] INFO  gateway-laptop-gmahekfg1765511102380/TRANSPORTER: NATS lib version: 2.29.3
+[2025-12-12T03:45:02.516Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: Transporter: NatsTransporter
+[2025-12-12T03:45:02.719Z] INFO  gateway-laptop-gmahekfg1765511102380/API: API Gateway server created.
+[2025-12-12T03:45:02.720Z] INFO  gateway-laptop-gmahekfg1765511102380/API: Register route to '/users'
+[2025-12-12T03:45:02.760Z] INFO  gateway-laptop-gmahekfg1765511102380/API:      GET /users/lists => v2.users.getAllUsers
+[2025-12-12T03:45:02.760Z] INFO  gateway-laptop-gmahekfg1765511102380/API:      GET /users/list => v2.users.list
+[2025-12-12T03:45:02.778Z] INFO  gateway-laptop-gmahekfg1765511102380/API: 
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API: Register route to '/clicks'
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API:      GET /clicks/lists => clicks.getAllClicks
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API:      GET /clicks/list => clicks.list
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API:      GET /clicks/count => clicks.count
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API:     POST /clicks/create/:id => clicks.createUser
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API:     POST /clicks/update/:id => clicks.updateUser
+[2025-12-12T03:45:02.779Z] INFO  gateway-laptop-gmahekfg1765511102380/API: 
+[2025-12-12T03:45:02.785Z] INFO  gateway-laptop-gmahekfg1765511102380/TRANSIT: Connecting to the transporter...
+[2025-12-12T03:45:02.921Z] INFO  gateway-laptop-gmahekfg1765511102380/TRANSPORTER: NATS client v2 is connected.
+[2025-12-12T03:45:02.932Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Node 'clicks-laptop-gmahekfg1765511099262' connected.
+[2025-12-12T03:45:03.076Z] INFO  gateway-laptop-gmahekfg1765511102380/CACHER: Redis cacher connected.
+[2025-12-12T03:45:03.443Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: '$node' service is registered.
+[2025-12-12T03:45:03.443Z] INFO  gateway-laptop-gmahekfg1765511102380/$NODE: Service '$node' started.
+[2025-12-12T03:45:03.453Z] INFO  gateway-laptop-gmahekfg1765511102380/API: API Gateway listening on http://localhost:5000
+[2025-12-12T03:45:03.455Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: 'api' service is registered.
+[2025-12-12T03:45:03.456Z] INFO  gateway-laptop-gmahekfg1765511102380/API: Service 'api' started.
+[2025-12-12T03:45:03.460Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: ✔ ServiceBroker with 2 service(s) started successfully in 680ms.
+[2025-12-12T03:45:04.479Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: Node 'gateway-laptop-gmahekfg1765511102380' connected.
+[2025-12-12T03:45:04.550Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Moleculer v0.14.35 is starting...
+[2025-12-12T03:45:04.551Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Namespace: <not defined>
+[2025-12-12T03:45:04.551Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Node ID: users-laptop-gmahekfg1765511104542
+[2025-12-12T03:45:04.552Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Strategy: RoundRobinStrategy
+[2025-12-12T03:45:04.552Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Discoverer: LocalDiscoverer
+[2025-12-12T03:45:04.649Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Cacher: RedisCacher
+[2025-12-12T03:45:04.649Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Serializer: JSONSerializer
+[2025-12-12T03:45:04.665Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Validator: FastestValidator
+[2025-12-12T03:45:04.667Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Registered 15 middleware(s).
+[2025-12-12T03:45:04.669Z] INFO  users-laptop-gmahekfg1765511104542/TRANSPORTER: NATS lib version: 2.29.3
+[2025-12-12T03:45:04.670Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: Transporter: NatsTransporter
+[2025-12-12T03:45:05.081Z] INFO  users-laptop-gmahekfg1765511104542/TRANSIT: Connecting to the transporter...
+[2025-12-12T03:45:05.215Z] INFO  users-laptop-gmahekfg1765511104542/TRANSPORTER: NATS client v2 is connected.
+[2025-12-12T03:45:05.227Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Node 'clicks-laptop-gmahekfg1765511099262' connected.
+[2025-12-12T03:45:05.229Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Node 'gateway-laptop-gmahekfg1765511102380' connected.
+[2025-12-12T03:45:05.526Z] INFO  users-laptop-gmahekfg1765511104542/CACHER: Redis cacher connected.
+[2025-12-12T03:45:05.845Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: '$node' service is registered.
+[2025-12-12T03:45:05.848Z] INFO  users-laptop-gmahekfg1765511104542/$NODE: Service '$node' started.
+[2025-12-12T03:45:06.080Z] INFO  users-laptop-gmahekfg1765511104542/V2.USERS: Sequelize adapter has connected successfully.
+[2025-12-12T03:45:06.091Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: 'users' service is registered.
+[2025-12-12T03:45:06.091Z] INFO  users-laptop-gmahekfg1765511104542/V2.USERS: Service 'v2.users' started.
+[2025-12-12T03:45:06.095Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: ✔ ServiceBroker with 2 service(s) started successfully in 1s.
+[2025-12-12T03:45:07.103Z] INFO  clicks-laptop-gmahekfg1765511099262/REGISTRY: Node 'users-laptop-gmahekfg1765511104542' connected.
+[2025-12-12T03:45:07.103Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Node 'users-laptop-gmahekfg1765511104542' connected.
+[2025-12-12T03:45:27.678Z] INFO  gateway-laptop-gmahekfg1765511102380/API: => GET /users/list
+[2025-12-12T03:45:27.681Z] INFO  gateway-laptop-gmahekfg1765511102380/API:    Call 'v2.users.list' action
+[2025-12-12T03:45:27.836Z] INFO  gateway-laptop-gmahekfg1765511102380/API: <= 200 GET /users/list [+159.510 ms]
+[2025-12-12T03:48:59.263Z] INFO  clicks-laptop-gmahekfg1765511099262/$NODE: Service '$node' stopped.
+[2025-12-12T03:48:59.264Z] INFO  clicks-laptop-gmahekfg1765511099262/CLICKS: Service 'clicks' stopped.
+[2025-12-12T03:48:59.270Z] INFO  clicks-laptop-gmahekfg1765511099262/TRANSPORTER: NATS connection closed.
+[2025-12-12T03:48:59.277Z] INFO  clicks-laptop-gmahekfg1765511099262/BROKER: ServiceBroker is stopped. Good bye.
+[2025-12-12T03:48:59.269Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Node 'clicks-laptop-gmahekfg1765511099262' disconnected.
+[2025-12-12T03:48:59.269Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Node 'clicks-laptop-gmahekfg1765511099262' disconnected.
+[2025-12-12T03:51:03.805Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Node 'clicks-laptop-gmahekfg1765511460782' connected.
+[2025-12-12T03:51:03.806Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Node 'clicks-laptop-gmahekfg1765511460782' connected.
+[2025-12-12T03:51:58.343Z] INFO  gateway-laptop-gmahekfg1765511102380/REGISTRY: Node 'clicks-laptop-gmahekfg1765511460782' disconnected.
+[2025-12-12T03:51:58.343Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Node 'clicks-laptop-gmahekfg1765511460782' disconnected.
+[2025-12-12T03:52:00.542Z] INFO  gateway-laptop-gmahekfg1765511102380/$NODE: Service '$node' stopped.
+[2025-12-12T03:52:00.543Z] INFO  gateway-laptop-gmahekfg1765511102380/API: API Gateway stopped!
+[2025-12-12T03:52:00.543Z] INFO  gateway-laptop-gmahekfg1765511102380/API: Service 'api' stopped.
+[2025-12-12T03:52:00.563Z] INFO  gateway-laptop-gmahekfg1765511102380/TRANSPORTER: NATS connection closed.
+[2025-12-12T03:52:00.579Z] INFO  gateway-laptop-gmahekfg1765511102380/BROKER: ServiceBroker is stopped. Good bye.
+[2025-12-12T03:52:00.561Z] INFO  users-laptop-gmahekfg1765511104542/REGISTRY: Node 'gateway-laptop-gmahekfg1765511102380' disconnected.
+[2025-12-12T03:52:02.765Z] INFO  users-laptop-gmahekfg1765511104542/$NODE: Service '$node' stopped.
+[2025-12-12T03:52:02.765Z] INFO  users-laptop-gmahekfg1765511104542/V2.USERS: Service 'v2.users' stopped.
+[2025-12-12T03:52:02.771Z] INFO  users-laptop-gmahekfg1765511104542/TRANSPORTER: NATS connection closed.
+[2025-12-12T03:52:02.777Z] INFO  users-laptop-gmahekfg1765511104542/BROKER: ServiceBroker is stopped. Good bye.
